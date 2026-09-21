@@ -45,7 +45,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // ---------- Health ----------
-app.get("/", (req, res) => res.json({ message: "TaskFlow API running" }));
+app.get("/", (req, res) => res.json({ message: "taskflux API running" }));
 app.get("/api/health", (req, res) => res.json({ ok: true, ts: Date.now() }));
 
 // ---------- Routes ----------
